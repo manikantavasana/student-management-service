@@ -138,7 +138,6 @@ Windows PowerShell or Command Prompt:
 
 ```text
 backend/src/main/java/com/studentmanagement
-├── config
 ├── controller
 ├── domain
 ├── dto
