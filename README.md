@@ -47,11 +47,23 @@ Start the application:
 java -jar backend/target/student-management-service-1.0.0-SNAPSHOT.jar
 ```
 
-Open `http://localhost:8090`.
+### Default URLs
+
+Keep the application running and open the required URL in a browser:
+
+| Purpose | URL |
+| --- | --- |
+| Frontend | `http://localhost:8090` |
+| Students | `http://localhost:8090/students` |
+| Courses | `http://localhost:8090/courses` |
+| API base URL | `http://localhost:8090/api` |
+| H2 console | `http://localhost:8090/h2-console` |
 
 ### Application structure
 
 Spring Boot serves both the Angular application and `/api` endpoints from port `8090`. During the Maven build, Angular files are copied into the executable Spring Boot JAR.
+
+When developing the frontend separately with `npm start`, open `http://localhost:4200`. The Angular development server forwards `/api` requests to the backend on port `8090`.
 
 ## Database
 
@@ -65,7 +77,7 @@ data/student-management-service.mv.db
 
 ### H2 console
 
-Keep the backend running and open `http://localhost:8090/h2-console`.
+Keep the application running and open `http://localhost:8090/h2-console`.
 
 | Field | Value |
 | --- | --- |
