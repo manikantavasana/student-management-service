@@ -19,45 +19,39 @@ A simple application to manage students, courses, and course enrollments.
 - Confirmation before deleting a record
 - Backend unit and integration tests
 
-## Run the application
+## Build and run the application
 
 ### Prerequisites
 
 - JDK 17 or later
-- Node.js 22.22.3 or later
-- npm 10 or later
 
-The Maven Wrapper is included, so Maven does not need to be installed separately. Make sure `java -version` and `npm -version` work before continuing.
+The Maven Wrapper is included, so Maven does not need to be installed separately. The build downloads a local Node.js installation and packages the Angular application inside the Spring Boot JAR.
 
-Start the backend from the project root.
+Run the build from the project root.
 
 macOS or Linux:
 
 ```bash
-./mvnw -pl backend spring-boot:run
+./mvnw clean package
 ```
 
 Windows PowerShell or Command Prompt:
 
 ```powershell
-.\mvnw.cmd -pl backend spring-boot:run
+.\mvnw.cmd clean package
 ```
 
-The backend runs at `http://localhost:8081`.
-
-Start the frontend in another terminal:
+Start the application:
 
 ```bash
-cd frontend
-npm install
-npm start
+java -jar backend/target/student-management-app-1.0.0-SNAPSHOT.jar
 ```
 
-Open `http://localhost:4200`.
+Open `http://localhost:8081`.
 
-### Frontend and backend connection
+### Application structure
 
-Angular runs on port `4200` and forwards `/api` requests to the Spring Boot backend on port `8081` using `frontend/proxy.conf.json`. Spring Boot uses `8081` by default and can be overridden with the `SERVER_PORT` environment variable. If the backend port changes, update the proxy target to use the same port.
+Spring Boot serves both the Angular application and `/api` endpoints from port `8081`. During the Maven build, Angular files are copied into the executable Spring Boot JAR.
 
 ## Database
 
@@ -66,7 +60,7 @@ The application uses a file-based H2 database, so no separate database installat
 The database file is created here:
 
 ```text
-backend/data/student-management.mv.db
+data/student-management.mv.db
 ```
 
 ### H2 console
@@ -102,7 +96,7 @@ The script can be run more than once without creating duplicate records.
 ### Reset the database
 
 1. Stop the backend.
-2. Delete `backend/data/student-management.mv.db` if the existing data is not needed.
+2. Delete `data/student-management.mv.db` if the existing data is not needed.
 3. Start the backend again to create an empty database.
 
 Do not delete the database file while the backend is running.
@@ -126,7 +120,7 @@ Student email and course code must be unique. A course cannot be deleted while s
 
 ## Tests
 
-Run the backend tests from the project root.
+Run the tests from the project root.
 
 macOS or Linux:
 
@@ -138,13 +132,6 @@ Windows PowerShell or Command Prompt:
 
 ```powershell
 .\mvnw.cmd test
-```
-
-Build the frontend:
-
-```bash
-cd frontend
-npm run build
 ```
 
 ## Project structure
