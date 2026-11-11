@@ -69,7 +69,19 @@ Keep the application running and open the required URL in a browser:
 
 Spring Boot serves both the Angular application and `/api` endpoints from port `8090`. During the Maven build, Angular files are copied into the executable Spring Boot JAR.
 
-When developing the frontend separately with `npm start`, open <a href="http://localhost:4200" target="_blank" rel="noopener noreferrer">http://localhost:4200</a> (opens in a new tab). The Angular development server forwards `/api` requests to the backend on port `8090`.
+### Optional frontend development
+
+The normal combined application does not require this step. To run Angular separately, install Node.js 22.22.3 or later and keep the backend running on port `8090`.
+
+Open a second terminal from the project root and run:
+
+```bash
+cd frontend
+npm ci
+npm start
+```
+
+Keep that terminal running, then open <a href="http://localhost:4200" target="_blank" rel="noopener noreferrer">http://localhost:4200</a> (opens in a new tab). The Angular development server forwards `/api` requests to the backend on port `8090`.
 
 ## Database
 
