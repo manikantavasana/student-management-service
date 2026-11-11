@@ -41,11 +41,17 @@ Windows PowerShell or Command Prompt:
 .\mvnw.cmd clean package
 ```
 
-Start the application:
+After the build completes, start the application using either option.
+
+### Option 1: Run from a terminal
 
 ```bash
 java -jar backend/target/student-management-service-1.0.0-SNAPSHOT.jar
 ```
+
+### Option 2: Run from an IDE
+
+Open [`StudentManagementApplication.java`](backend/src/main/java/com/studentmanagement/StudentManagementApplication.java) and run its `main` method. In IntelliJ IDEA, click the Run icon next to the class declaration or the `main` method.
 
 ### Default URLs
 
