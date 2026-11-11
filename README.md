@@ -53,17 +53,17 @@ Keep the application running and open the required URL in a browser:
 
 | Purpose | URL |
 | --- | --- |
-| Frontend | <a href="http://localhost:8090" target="_blank" rel="noopener noreferrer">Open the application (opens in a new tab)</a> |
-| Students | <a href="http://localhost:8090/students" target="_blank" rel="noopener noreferrer">Open Students (opens in a new tab)</a> |
-| Courses | <a href="http://localhost:8090/courses" target="_blank" rel="noopener noreferrer">Open Courses (opens in a new tab)</a> |
-| API base URL | <a href="http://localhost:8090/api" target="_blank" rel="noopener noreferrer">Open the API base URL (opens in a new tab)</a> |
-| H2 console | <a href="http://localhost:8090/h2-console" target="_blank" rel="noopener noreferrer">Open the H2 console (opens in a new tab)</a> |
+| Frontend | <a href="http://localhost:8090" target="_blank" rel="noopener noreferrer">http://localhost:8090</a> (opens in a new tab) |
+| Students | <a href="http://localhost:8090/students" target="_blank" rel="noopener noreferrer">http://localhost:8090/students</a> (opens in a new tab) |
+| Courses | <a href="http://localhost:8090/courses" target="_blank" rel="noopener noreferrer">http://localhost:8090/courses</a> (opens in a new tab) |
+| API base URL | <a href="http://localhost:8090/api" target="_blank" rel="noopener noreferrer">http://localhost:8090/api</a> (opens in a new tab) |
+| H2 console | <a href="http://localhost:8090/h2-console" target="_blank" rel="noopener noreferrer">http://localhost:8090/h2-console</a> (opens in a new tab) |
 
 ### Application structure
 
 Spring Boot serves both the Angular application and `/api` endpoints from port `8090`. During the Maven build, Angular files are copied into the executable Spring Boot JAR.
 
-When developing the frontend separately with `npm start`, <a href="http://localhost:4200" target="_blank" rel="noopener noreferrer">open the Angular development server (opens in a new tab)</a>. It forwards `/api` requests to the backend on port `8090`.
+When developing the frontend separately with `npm start`, open <a href="http://localhost:4200" target="_blank" rel="noopener noreferrer">http://localhost:4200</a> (opens in a new tab). The Angular development server forwards `/api` requests to the backend on port `8090`.
 
 ## Database
 
@@ -77,7 +77,7 @@ data/student-management-service.mv.db
 
 ### H2 console
 
-Keep the application running and <a href="http://localhost:8090/h2-console" target="_blank" rel="noopener noreferrer">open the H2 console (opens in a new tab)</a>.
+Keep the application running and open <a href="http://localhost:8090/h2-console" target="_blank" rel="noopener noreferrer">http://localhost:8090/h2-console</a> (opens in a new tab).
 
 | Field | Value |
 | --- | --- |
