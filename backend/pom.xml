@@ -11,9 +11,9 @@
     </parent>
 
     <groupId>com.studentmanagement</groupId>
-    <artifactId>student-management-app</artifactId>
+    <artifactId>student-management-service</artifactId>
     <version>1.0.0-SNAPSHOT</version>
-    <name>student-management-app</name>
+    <name>Student Management Service</name>
     <description>Student management web application</description>
 
     <properties>

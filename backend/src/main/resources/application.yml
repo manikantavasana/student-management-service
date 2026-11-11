@@ -1,6 +1,6 @@
 spring:
   application:
-    name: student-management-app
+    name: student-management-service
   datasource:
     url: jdbc:h2:file:./data/student-management-service
     username: sa

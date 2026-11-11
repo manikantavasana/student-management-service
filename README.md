@@ -44,7 +44,7 @@ Windows PowerShell or Command Prompt:
 Start the application:
 
 ```bash
-java -jar backend/target/student-management-app-1.0.0-SNAPSHOT.jar
+java -jar backend/target/student-management-service-1.0.0-SNAPSHOT.jar
 ```
 
 Open `http://localhost:8090`.
