@@ -13,7 +13,7 @@ import org.slf4j.LoggerFactory;
 import java.net.URI;
 import java.util.LinkedHashMap;
 
-@RestControllerAdvice
+@RestControllerAdvice(basePackages = "com.studentmanagement.controller")
 public class ApiExceptionHandler {
 
     private static final Logger log = LoggerFactory.getLogger(ApiExceptionHandler.class);
