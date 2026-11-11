@@ -59,7 +59,7 @@ Keep the application running and open the required URL in a browser:
 
 | Purpose | URL |
 | --- | --- |
-| Frontend | <a href="http://localhost:8090" target="_blank" rel="noopener noreferrer">http://localhost:8090</a> (opens in a new tab) |
+| Frontend (opens Students) | <a href="http://localhost:8090" target="_blank" rel="noopener noreferrer">http://localhost:8090</a> (opens in a new tab) |
 | Students | <a href="http://localhost:8090/students" target="_blank" rel="noopener noreferrer">http://localhost:8090/students</a> (opens in a new tab) |
 | Courses | <a href="http://localhost:8090/courses" target="_blank" rel="noopener noreferrer">http://localhost:8090/courses</a> (opens in a new tab) |
 | API base URL | <a href="http://localhost:8090/api" target="_blank" rel="noopener noreferrer">http://localhost:8090/api</a> (opens in a new tab) |
