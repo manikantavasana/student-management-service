@@ -47,11 +47,11 @@ Start the application:
 java -jar backend/target/student-management-app-1.0.0-SNAPSHOT.jar
 ```
 
-Open `http://localhost:8081`.
+Open `http://localhost:8090`.
 
 ### Application structure
 
-Spring Boot serves both the Angular application and `/api` endpoints from port `8081`. During the Maven build, Angular files are copied into the executable Spring Boot JAR.
+Spring Boot serves both the Angular application and `/api` endpoints from port `8090`. During the Maven build, Angular files are copied into the executable Spring Boot JAR.
 
 ## Database
 
@@ -65,7 +65,7 @@ data/student-management.mv.db
 
 ### H2 console
 
-Keep the backend running and open `http://localhost:8081/h2-console`.
+Keep the backend running and open `http://localhost:8090/h2-console`.
 
 | Field | Value |
 | --- | --- |
