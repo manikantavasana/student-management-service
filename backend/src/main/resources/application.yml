@@ -2,7 +2,7 @@ spring:
   application:
     name: student-management-app
   datasource:
-    url: jdbc:h2:file:./data/student-management
+    url: jdbc:h2:file:./data/student-management-service
     username: sa
     password:
   jpa:

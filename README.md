@@ -60,7 +60,7 @@ The application uses a file-based H2 database, so no separate database installat
 The database file is created here:
 
 ```text
-data/student-management.mv.db
+data/student-management-service.mv.db
 ```
 
 ### H2 console
@@ -70,7 +70,7 @@ Keep the backend running and open `http://localhost:8090/h2-console`.
 | Field | Value |
 | --- | --- |
 | Driver Class | `org.h2.Driver` |
-| JDBC URL | `jdbc:h2:file:./data/student-management` |
+| JDBC URL | `jdbc:h2:file:./data/student-management-service` |
 | User Name | `sa` |
 | Password | Leave blank |
 
@@ -96,7 +96,7 @@ The script can be run more than once without creating duplicate records.
 ### Reset the database
 
 1. Stop the backend.
-2. Delete `data/student-management.mv.db` if the existing data is not needed.
+2. Delete `data/student-management-service.mv.db` if the existing data is not needed.
 3. Start the backend again to create an empty database.
 
 Do not delete the database file while the backend is running.
